@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&family=Hind:wght@300&family=Mukta:wght@500&family=Quicksand&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  margin: 0;
+  width: 100%;
+  background-color: rgb(246, 151, 119);
+}
+
+ ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+  text-align: center;
+}  
+
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 20px;
+  font-family: 'Mukta', sans-serif;
+  margin-block-start: 1em;
+  margin-inline-start: 0px;
+  padding-inline-start: 40px;
+  letter-spacing: 1px;
+}
+a:hover{
+  color: rgb(0, 0, 0);
+}
+li a{
+  font-family: "Montserrat",Sans-serif;
+  margin-bottom: 1px;
+  
+}
+
+
+h1 {
+  margin: 0;
+  padding: 20px;
+  font-family: 'Mukta', sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 40px;
+  background-color: rgb(246, 151, 119);
+}
+
+footer {
+  height: 15%;
+  color: aliceblue;
+  text-align: center;
+  font-family: 'Mukta', sans-serif;
+  background-color: rgb(246, 151, 119);
+}
+
+#foto1 img {
+  width: 100%;
+  height: 100%;
+}
+
+#foto1 img:hover {
+  filter: grayscale(100%);
+  scale: 1.03;
+  transition: all 1s ease;
+}
+
+#foto1 img:hover:not(:hover) {
+  filter: grayscale(0%);
+  scale: 1;
+  transition: all 0.5s ease;
+}
+
+#challenge {
+  grid-area: uno;
+  margin: 10px;
+  background: linear-gradient(90deg, rgba(246, 151, 119, 1) 25%, rgba(245, 137, 100, 1) 39%, rgba(238, 113, 69, 1) 67%);
+  display: inline-block;
+  justify-content: center;
+}
+
+#rutina {
+  margin-top: 100px;
+  color: aliceblue;
+}
+
+#challengeimg {
+  margin: 50px;
+  width: 500px;
+  height: 500px;
+  background-image: url("../img/barra.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  float: left;
+
+}
+
+
+#plaza1 {
+  grid-area: dos;
+  margin: 10px;
+  background-color: aliceblue;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  font-family: 'Hind', sans-serif;
+
+
+}
+
+#plaza2 {
+  grid-area: cuatro;
+  background-color: aliceblue;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+}
+
+#video {
+  grid-area: tres;
+  background-color: aliceblue;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+
+}
+
+#grilla {
+  display: grid;
+  grid-template-areas:
+    "uno uno uno"
+    "dos tres cuatro";
+  grid-template-columns: auto 33% 33%;
+  grid-template-rows: auto auto;
+  gap: 5px;
+  background: aliceblue;
+}
+
+#rutina h2 {
+  text-align: center;
+  font-family: "Crimson Text", serif;
+  font-size: 75px;
+}
+
+#rutina h2:hover {
+  color: rgb(0, 0, 0);
+  transition: all 0.2s ease-out;
+}
+
+#rutina li {
+  text-align: left;
+  font-family: "Crimson Text", serif;
+  font-size: 18px;
+}
+
+#grilla2 {
+  display: grid;
+  grid-template-areas: 
+  "cinco seis"
+  "siete seis"; 
+  grid-template-columns: auto 60%;
+  gap: 5px;
+}
+
+
+
+
+#foto2 {
+  width: 60%;
+  height: 90%;
+  border-radius: 50%;
+  
+}
+form {
+  grid-area: seis;
+  
+}
+#imagen{
+  grid-area: siete;
+  align-items: center;
+  
+}
+.contacto-info{
+  grid: cinco;
+  flex: 0;
+  padding-left: 20px;
+  display: block;
+
+  align-items: center;
+}
+.contact-item{
+  position: relative;
+  padding-right: 30px;
+  list-style: none;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+
+}
+.icono{
+  text-align: center;
+  width: 1.25em;
+}
+
+.contacto-info a{
+  color: black;
+}
+
+.formulario{
+  margin-top: 40px;
+  margin-bottom: 20px;
+  position: relative;
+  
+ 
+  
+}
+.form-control{
+
+
+  display: block;
+  padding-left: 2%;
+  height: 40px;
+  width: 60%;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-bottom: 5px;
+
+  
+}
+#Textarea1{
+  height: 200px;
+  padding-top: 2%;
+  font-size: 15px;
+  font-family: "Montserrat",Sans-serif;
+ 
+
+}
+
+.contacto-info h2{
+  font-family: "Montserrat",Sans-serif;
+  color:  rgb(246, 151, 119);
+  font-size: 50px;
+}
+.form-label{
+  font-size: 20px;
+  font-family: "Montserrat",Sans-serif;
+}
+
+.botonenviar{
+  width: 62%;
+  padding: 13px;
+  background-color: rgb(246, 151, 119); ;
+  color: aliceblue;
+  letter-spacing: 2px;
+  font-weight: bold;
+  border: 0;
+  border-radius: 40px;
+  text-transform: uppercase;
+}
+
+
+#grilla3{
+  display: grid;
+  grid-template-areas: 
+  "ocho nueve"
+  "diez once";
+  grid-template-columns: 50% auto;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+
+}
+
+
+
+#minifoto1{
+  grid-area: ocho;
+}
+
+#minifoto2{
+  grid-area: nueve;
+
+}
+
+#minifoto3{
+  grid-area: diez;
+}
+
+#minifoto4{
+  grid-area: once;
+}
+
+.card-text{
+  color: aliceblue;
+  font-family: "Crimson Text", serif;
+  font-size: 20px;
+  justify-content: center;
+}
+
+
+
+@media (min-width: 1024px) {
+  #rutina h2 {
+    text-align: center;
+    font-family: "Crimson Text", serif;
+    font-size: 100px;
+  }
+
+  #rutina h2:hover {
+    transition: all 0.2s ease-out;
+  }
+
+  #rutina li {
+    text-align: left;
+    font-family: "Crimson Text", serif;
+    font-size: 25px;
+  }
+}
+
+.card {
+  margin: 10px;
+  background-color: rgb(246, 151, 119);
+}
