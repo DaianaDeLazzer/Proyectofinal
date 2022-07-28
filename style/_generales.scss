@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&family=Hind:wght@300&family=Mukta:wght@500&family=Quicksand&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&family=Hind:wght@300&family=Mukta:wght@500&family=Quicksand&display=swap');
+
+
 * {
   margin: 0;
   padding: 0;
@@ -34,75 +36,92 @@ ul {
 li {
   display: inline-block;
   text-align: center;
-}
-li a {
-  font-family: "Montserrat", Sans-serif;
-  margin-bottom: 1px;
+
+  a {
+    font-family: "Montserrat", Sans-serif;
+    margin-bottom: 1px;
+
+  }
+
 }
 
 a {
   text-decoration: none;
   color: aliceblue;
   font-size: 10px;
-  font-family: "Mukta", sans-serif;
-  -webkit-margin-before: 1em;
-          margin-block-start: 1em;
-  -webkit-margin-start: 0px;
-          margin-inline-start: 0px;
-  -webkit-padding-start: 10px;
-          padding-inline-start: 10px;
+  font-family: 'Mukta', sans-serif;
+  margin-block-start: 1em;
+  margin-inline-start: 0px;
+  padding-inline-start: 10px;
   letter-spacing: 1px;
+
+  &:hover {
+    color: rgb(0, 0, 0);
+  }
 }
-a:hover {
-  color: rgb(0, 0, 0);
-}
+
 
 #foto1 img {
   width: 100%;
   height: 320px;
-}
-#foto1 img:hover {
-  filter: grayscale(100%);
-  scale: 1.03;
-  transition: all 1s ease;
-}
-#foto1 img:hover:not(:hover) {
-  filter: grayscale(0%);
-  scale: 1;
-  transition: all 0.5s ease;
+
+  &:hover {
+    filter: grayscale(100%);
+    scale: 1.03;
+    transition: all 1s ease;
+  }
+
+  &:hover:not(:hover) {
+    filter: grayscale(0%);
+    scale: 1;
+    transition: all 0.5s ease;
+  }
 }
 
 #rutina {
   margin-top: 25px;
   color: aliceblue;
-}
-#rutina li {
-  text-align: left;
-  font-family: "Crimson Text", serif;
-  font-size: 14px;
-}
-#rutina h2 {
-  color: aliceblue;
-  text-align: center;
-  font-family: "Crimson Text", serif;
-  font-size: 22px;
-}
-#rutina h2:hover {
-  color: rgb(0, 0, 0);
-  transition: all 0.2s ease-out;
+
+  li {
+    text-align: left;
+    font-family: "Crimson Text", serif;
+    font-size: 14px;
+  
+  }
+
+
+
+
+  h2 {
+    color: aliceblue;
+    text-align: center;
+    font-family: "Crimson Text", serif;
+    font-size: 22px;
+
+    &:hover {
+      color: rgb(0, 0, 0);
+      transition: all 0.2s ease-out;
+    }
+
+  }
 }
 
 footer {
   height: 15%;
   color: aliceblue;
   text-align: center;
-  font-family: "Mukta", sans-serif;
+  font-family: 'Mukta', sans-serif;
   background-color: rgb(246, 151, 119);
 }
 
+// Esta grilla sera la que se muestre para un celular
 #grilla {
   display: grid;
-  grid-template-areas: "uno" "dos" "tres" "cuatro";
+  grid-template-areas:
+    "uno"
+    "dos"
+    "tres"
+    "cuatro";
   grid-template-columns: 100%;
   grid-template-rows: auto auto auto auto;
   gap: 5px;
@@ -112,7 +131,7 @@ footer {
 #challenge {
   grid-area: uno;
   margin: 10px;
-  background: linear-gradient(90deg, rgb(246, 151, 119) 25%, rgb(245, 137, 100) 39%, rgb(238, 113, 69) 67%);
+  background: linear-gradient(90deg, rgba(246, 151, 119, 1) 25%, rgba(245, 137, 100, 1) 39%, rgba(238, 113, 69, 1) 67%);
   display: inline-block;
   justify-content: center;
 }
@@ -124,8 +143,10 @@ footer {
   color: aliceblue;
   display: flex;
   justify-content: center;
-  font-family: "Hind", sans-serif;
+  font-family: 'Hind', sans-serif;
 }
+
+
 
 #video {
   grid-area: tres;
@@ -133,6 +154,7 @@ footer {
   color: aliceblue;
   display: flex;
   justify-content: center;
+
 }
 
 #plaza2 {
@@ -147,9 +169,13 @@ iframe {
   height: 150px;
 }
 
+
 #grilla2 {
   display: grid;
-  grid-template-areas: "cinco" "siete" "seis";
+  grid-template-areas:
+    "cinco"
+    "siete"
+    "seis";
   grid-template-columns: auto;
   gap: 5px;
 }
@@ -159,15 +185,18 @@ iframe {
   flex: 0;
   padding-left: 20px;
   display: block;
+
   align-items: center;
-}
-.contacto-info a {
-  color: black;
-}
-.contacto-info h2 {
-  font-family: "Montserrat", Sans-serif;
-  color: rgb(246, 151, 119);
-  font-size: 20px;
+
+  a {
+    color: black;
+  }
+
+  h2 {
+    font-family: "Montserrat", Sans-serif;
+    color: rgb(246, 151, 119);
+    font-size: 20px;
+  }
 }
 
 #foto2 {
@@ -184,6 +213,7 @@ form {
 #imagen {
   grid-area: siete;
   align-items: center;
+
 }
 
 .contact-item {
@@ -193,6 +223,7 @@ form {
   margin-top: 10px;
   display: flex;
   align-items: center;
+
 }
 
 .icono {
@@ -208,12 +239,16 @@ form {
 }
 
 .form-control {
+
+
   display: block;
   height: 25px;
   width: 80%;
   border: 1px solid black;
   border-radius: 10px;
   margin-bottom: 5px;
+
+
 }
 
 #Textarea1 {
@@ -221,7 +256,10 @@ form {
   padding-top: 2%;
   font-size: 13px;
   font-family: "Montserrat", Sans-serif;
+
+
 }
+
 
 .form-label {
   font-size: 16px;
@@ -232,6 +270,7 @@ form {
   width: 82%;
   padding: 13px;
   background-color: rgb(246, 151, 119);
+  ;
   color: aliceblue;
   letter-spacing: 2px;
   font-weight: bold;
@@ -242,12 +281,19 @@ form {
 
 #grilla3 {
   display: grid;
-  grid-template-areas: "ocho" "nueve" "diez" "once";
-  grid-template-columns: auto;
+  grid-template-areas:
+    "ocho"
+    "nueve"
+    "diez"
+    "once";
+  grid-template-columns:auto;
   gap: 10px;
   justify-content: center;
   margin-top: 10px;
+
 }
+
+
 
 #minifoto1 {
   grid-area: ocho;
@@ -255,6 +301,7 @@ form {
 
 #minifoto2 {
   grid-area: nueve;
+
 }
 
 #minifoto3 {
@@ -272,60 +319,76 @@ form {
   justify-content: center;
 }
 
+
 .accordion-button {
   font-size: 16px;
-  color: black;
+  color: black
 }
 
 .accordion-button:not(.collapsed) {
   color: rgb(246, 151, 119);
   background-color: rgb(255, 223, 212);
+
 }
+
 
 .accordion {
   font-size: 15px;
 }
 
-#quiensoy p {
-  padding-left: 20px;
-  padding-right: 10px;
-  color: black;
-  font-family: "Crimson Text", serif;
+#quiensoy {
+  p{
+    padding-left: 20px;
+    padding-right: 10px;
+    color: black;
+    font-family: "Crimson Text", serif;
+  }
 }
 
-@media (min-width: 1024px) {
+@media (min-width:1024px) {
+
   h1 {
     font-size: 40px;
   }
+
   a {
     font-size: 20px;
-    -webkit-padding-start: 40px;
-            padding-inline-start: 40px;
+    padding-inline-start: 40px;
   }
+
   #foto1 img {
     height: 100%;
   }
+
   #rutina {
     margin-top: 100px;
+
+    li {
+      font-size: 24px;
+    }
+
+    h2 {
+      font-size: 75px;
+    }
   }
-  #rutina li {
-    font-size: 24px;
-  }
-  #rutina h2 {
-    font-size: 75px;
-  }
+
   #grilla {
     display: grid;
-    grid-template-areas: "uno uno uno" "dos tres cuatro";
+    grid-template-areas:
+      "uno uno uno"
+      "dos tres cuatro";
     grid-template-columns: auto 33% 33%;
     grid-template-rows: auto auto;
     gap: 5px;
     background: aliceblue;
   }
+
   #challenge {
     grid-area: uno;
     margin: 10px;
+
   }
+
   #challengeimg {
     margin: 50px;
     width: 500px;
@@ -334,85 +397,119 @@ form {
     background-size: cover;
     background-repeat: no-repeat;
     float: left;
+
   }
+
   #plaza1 {
     grid-area: dos;
   }
+
   #video {
     grid-area: tres;
   }
+
   #plaza2 {
     grid-area: cuatro;
   }
+
   iframe {
     height: 250px;
   }
+
+
   #grilla2 {
     display: grid;
-    grid-template-areas: "cinco seis" "siete seis";
+    grid-template-areas:
+      "cinco seis"
+      "siete seis";
     grid-template-columns: auto 60%;
     gap: 5px;
   }
+
   .contacto-info {
     grid: cinco;
+
+    h2 {
+      font-size: 50px;
+    }
   }
-  .contacto-info h2 {
-    font-size: 50px;
-  }
+
   form {
     grid-area: seis;
   }
+
   #imagen {
     grid-area: siete;
   }
+
   .formulario {
     margin-top: 40px;
     margin-bottom: 20px;
   }
+
   .form-control {
     height: 40px;
     width: 60%;
-  }
+   }
+
   #Textarea1 {
     height: 200px;
     font-size: 15px;
   }
+
   .form-label {
     font-size: 20px;
   }
+
   .botonenviar {
     width: 62%;
   }
+
+
   #grilla3 {
     display: grid;
-    grid-template-areas: "ocho nueve" "diez once";
+    grid-template-areas:
+      "ocho nueve"
+      "diez once";
     grid-template-columns: 50% auto;
     gap: 10px;
     justify-content: center;
     margin-top: 10px;
+
   }
+
+
+
   #minifoto1 {
     grid-area: ocho;
   }
+
   #minifoto2 {
     grid-area: nueve;
+
   }
+
   #minifoto3 {
     grid-area: diez;
   }
+
   #minifoto4 {
     grid-area: once;
   }
+
   .card-text {
     font-size: 20px;
   }
+
   .accordion-button {
     font-size: 25px;
-    color: black;
+    color: black
   }
+
   #quiensoy {
     height: 600px;
   }
+
   #imgfinal {
     margin: 50px;
     width: 500px;
@@ -422,7 +519,3 @@ form {
     float: left;
   }
 }
-.card {
-  margin: 10px;
-  background-color: rgb(246, 151, 119);
-}/*# sourceMappingURL=style.css.map */
